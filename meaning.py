@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 import urllib.request
-
+import time
 "This program finds the meaning of word"
 word=input('enter the word: ')
 website='https://dictionary.cambridge.org/dictionary/english/'+word
@@ -21,3 +21,4 @@ k=str(source).split(":")
 k.pop()
 for j in k:
     print(j)
+time.sleep(100)
